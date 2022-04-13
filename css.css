@@ -54,6 +54,7 @@ nav ul li{
     text-align: center;
     background-color: black;
     transition: all .5s;
+    font-size: 20px;
     
 }
 a{
