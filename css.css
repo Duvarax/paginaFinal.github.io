@@ -197,3 +197,26 @@ ul{
 .arms-info li p{
     color: black;
 }
+.arms-info{
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+.arms-info li{
+    margin: 5px;
+}
+.arms-info li img{
+    float: left;
+    width: 130px;
+    height: 100px;
+    object-fit:scale-down;
+    margin: auto;
+}
+.arms-info li p{
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
