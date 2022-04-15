@@ -156,7 +156,7 @@ nav ul li ul .artemisa:hover{
     box-shadow: 5px 5px 5px 0 rgb(95, 241, 95);
 
 }
-#armas .armas-wrapper .armas li:first-child{
+#armas .armas-wrapper .arms li:first-child{
     visibility: visible;
     position: absolute;
     background-color: #008a47;
