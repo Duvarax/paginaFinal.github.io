@@ -200,10 +200,11 @@ ul{
 .arms-info{
     display: flex;
     flex-direction: column;
-    vertical-align: middle;
+    border: 2px solid black;
 }
 .arms-info li{
     margin: 5px;
+    border: 2px solid rgb(0, 36, 19);
 }
 .arms-info li img{
     float: left;
