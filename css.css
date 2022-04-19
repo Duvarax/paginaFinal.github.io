@@ -91,7 +91,7 @@ nav ul li ul .artemisa:hover{
 nav{
     position: sticky;
     top:0px;
-    z-index:10;
+    z-index:20;
 }
 .resumen{
     background-image: url(https://i.pinimg.com/originals/b6/9e/a4/b69ea4105246c5a492b799f0a4865ece.jpg);
