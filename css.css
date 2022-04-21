@@ -35,7 +35,6 @@ nav{
     height: 70px;
     background-color: black;
     z-index: 20;
-    position: sticky;
 }
 nav ul img{
     width: 50px;
@@ -89,8 +88,6 @@ nav ul li ul .artemisa:hover{
     background: linear-gradient(90deg, rgba(36,131,0,1) 0%, rgba(14,255,0,0.9948354341736695) 100%);
 }
 nav{
-    position: sticky;
-    top:0px;
     z-index:20;
 }
 .resumen{
