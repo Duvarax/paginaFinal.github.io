@@ -5,12 +5,19 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .inicio{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1145360/8d2cd2ab1e26be2befd447428be2310fdedd5cfd.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
+}
+.background-img{
+    position: absolute;
+    z-index: -1;
+    top:70px;
+    object-fit: cover;
 }
 .inicio-decoration{
     width: 100%;
@@ -34,9 +41,9 @@ nav{
     width: 100%;
     height: 70px;
     background-color: black;
-    z-index: 20;
-    position: relative;
+    z-index: 2;
     top:0px;
+    position: relative;
 }
 nav ul img{
     width: 50px;
@@ -89,9 +96,6 @@ nav ul li ul .atenea:hover{
 nav ul li ul .artemisa:hover{
     background: linear-gradient(90deg, rgba(36,131,0,1) 0%, rgba(14,255,0,0.9948354341736695) 100%);
 }
-nav{
-    z-index:20;
-}
 .resumen{
     background-image: url(https://i.pinimg.com/originals/b6/9e/a4/b69ea4105246c5a492b799f0a4865ece.jpg);
     width: 100%;
@@ -117,11 +121,15 @@ nav{
     position: relative;
     top:100px;
     left: 0;
-    font-size: 50px;
+    font-size: 60px;
 }
 .resumen .section-wraper p{
     font-size: 20px;
     padding: 30px;
+}
+.resumen .section-wraper iframe{
+    margin: auto;
+    border: 2px solid black;
 }
 .division{
     position: absolute;
@@ -167,7 +175,7 @@ nav{
     align-items: center;
     width: 200px;
     height: 250px;
-    background-color: #00da71;
+    background-color: #013f22;
     border-radius: 50%;
 
 }
@@ -208,6 +216,7 @@ ul{
     padding: 5px;
 }
 .arms-info li p{
+    font-size: 20px;
     color: black;
 }
 .arms-info{
@@ -215,9 +224,14 @@ ul{
     flex-direction: column;
     border: 2px solid black;
 }
+.arms-info ul{
+    display: flex;
+    align-items: center;
+}
 .arms-info li{
     margin: 5px;
     border: 2px solid rgb(0, 36, 19);
+    height: 200px;
 }
 .arms-info li img{
     float: left;
@@ -233,4 +247,111 @@ ul{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+#items{
+    background-image: url(https://www.hyperhype.es/wp-content/uploads/2020/09/wallpaper.hades_.1920x1080.2018-12-07.9.jpg);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-size: 100% 100%;
+}
+.items-wrapper{
+    width: 88%;
+    background-color: rgb(205, 253, 255);
+    opacity: .9;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.items-wrapper h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+}
+.items-wrapper ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.items-wrapper ul li{
+    width: 90%;
+    padding: 30px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 10px 0 black;
+}
+.items-wrapper ul li h3{
+    font-size: 55px;
+    padding-left: 60px;
+}
+.items-wrapper ul li p{
+    font-size: 30px;
+}
+.items-wrapper ul img{
+    position: relative;
+    float: right;
+    top:-50px;
+    width: 150px;
+}
+.items-wrapper ul li h4{
+    padding-left: 60px;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #012703;
+}
+.item-div{
+    width: 90%;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #013f22;
+    z-index: -1;
+    position: relative;
+    margin: 50px;
+}
+#jefes{
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://desktophut.com/wp-content/uploads/2021/12/Hades-Title-Screen-Game-Live-Wallpaper-1/Hades-Title-Screen-Game-Live-Wallpaper-1_thumbnail.jpg);
+}
+.jefes-wrapper{
+    background-color: aliceblue;
+    opacity: .9;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.jefes-wrapper h2{
+    font-size: 60px;
+    color: black;
+}
+.jefes-wrapper li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.jefes-wrapper li h3{
+    font-size: 40px;
+    color: #012703;
+    margin-top: 40px;
+}
+.jefes-wrapper li img{
+    display: flex;
+    float: right;
+    border: 1px solid black;
+    margin: 30px;
+    box-shadow: 5px 5px 10px 0 #012703;
+    width: 320px;
+    object-fit: scale-down;
 }
