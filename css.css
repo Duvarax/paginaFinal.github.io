@@ -44,6 +44,9 @@ nav{
     z-index: 2;
     top:0px;
     position: relative;
+    z-index: 20;
+    position: relative;
+    top:0px;
 }
 nav ul img{
     width: 50px;
@@ -95,6 +98,9 @@ nav ul li ul .atenea:hover{
 }
 nav ul li ul .artemisa:hover{
     background: linear-gradient(90deg, rgba(36,131,0,1) 0%, rgba(14,255,0,0.9948354341736695) 100%);
+}
+nav{
+    z-index:20;
 }
 .resumen{
     background-image: url(https://i.pinimg.com/originals/b6/9e/a4/b69ea4105246c5a492b799f0a4865ece.jpg);
@@ -155,6 +161,12 @@ nav ul li ul .artemisa:hover{
     background-color: rgb(205, 253, 255);
     opacity: .9;
 }
+
+#armas .armas-wrapper{
+    width: 90%;
+    background-color: rgb(205, 253, 255);
+    opacity: .9;
+}
 #armas .armas-wrapper h2{
     text-align: center;
     margin-top: 50px;
@@ -176,8 +188,8 @@ nav ul li ul .artemisa:hover{
     width: 200px;
     height: 250px;
     background-color: #013f22;
+    background-color: #00da71;
     border-radius: 50%;
-
 }
 #armas .armas-wrapper .arms li img{
     object-fit: fill;
@@ -232,6 +244,10 @@ ul{
     margin: 5px;
     border: 2px solid rgb(0, 36, 19);
     height: 200px;
+}
+.arms-info li{
+    margin: 5px;
+    border: 2px solid rgb(0, 36, 19);
 }
 .arms-info li img{
     float: left;
@@ -355,3 +371,4 @@ ul{
     width: 320px;
     object-fit: scale-down;
 }
+
