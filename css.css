@@ -410,9 +410,12 @@ ul{
          width: 900px;
          height: auto;
      }
-     #start img{
-         width: 50px;
+      #start img{
+         width: 100px;
 
+     }
+     #start{
+         height: 120px;
      }
      #fury img{
          width: 25%;
