@@ -5,8 +5,8 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .inicio{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 900%;
     background-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1145360/8d2cd2ab1e26be2befd447428be2310fdedd5cfd.jpg);
     display: flex;
     align-items: center;
@@ -250,7 +250,7 @@ ul{
 }
 #items{
     background-image: url(https://www.hyperhype.es/wp-content/uploads/2020/09/wallpaper.hades_.1920x1080.2018-12-07.9.jpg);
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
