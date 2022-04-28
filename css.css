@@ -399,4 +399,22 @@ ul{
      align-items: center;
 
  }
+@media (min-width: 400px){
+     .arms-info li p{
+         font-size: 22px;
+     }
+     .inicio{
+         background-size:100% 100%;
+     }
+     .inicio img{
+         width: 900px;
+         height: auto;
+     }
+     #start img{
+         width: 50px;
+
+     }
+     #fury img{
+         width: 25%;
+     }
 
