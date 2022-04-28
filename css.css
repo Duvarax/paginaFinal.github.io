@@ -6,7 +6,7 @@
 }
 .inicio{
     width: 100%;
-    height: 900%;
+    height: 900px;
     background-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1145360/8d2cd2ab1e26be2befd447428be2310fdedd5cfd.jpg);
     display: flex;
     align-items: center;
