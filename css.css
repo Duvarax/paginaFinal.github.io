@@ -314,67 +314,68 @@ ul{
     margin: 50px;
 }
 #jefes{
-    margin-top: 22px;
+    background-color: black;
+    background-size: auto auto;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
-    background-image: url(https://images6.alphacoders.com/111/1113644.png);
-    background-size: 100% 100%;
 }
-.jefes-wrapper{
-    background-color: aliceblue;
-    opacity: .9;
+#jefes .jefes-wrapper{
+    background-color: rgb(205, 253, 255);
     width: 88%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin: 50px auto;
     margin-bottom: 30px;
 }
 .jefes-wrapper h2{
     font-size: 60px;
-    color: black;
 }
-.jefes-wrapper li{
+.jefes-wrapper ul li{
+    margin-top: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
-.jefes-wrapper li h3{
-    font-size: 40px;
+.jefes-wrapper ul li h3{
+    font-size: 35px;
+    border-radius: 10%;
     color: #012703;
-    margin-top: 40px;
+    margin: auto;
+    box-shadow: 1px 1px 5px #00995d;
 }
-.jefes-wrapper li img{
-    display: flex;
-    float: right;
-    border: 1px solid black;
+.jefes-wrapper ul li div.separador{
     margin: 30px;
-    box-shadow: 5px 5px 10px 0 #012703;
-    width: 320px;
-    height: 320px;
+    width: 95%;
+    border-radius: 70%;
+    height: 5px;
+    background-color: #012703;
+}
+.jefes-wrapper ul li div img{
+    margin: 30px 60px;
+    width: 250px;
+    height: 250px;
     object-fit: scale-down;
     border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px #012703;
 }
-.jefes-wrapper .hades{
-    color:rgb(134, 4, 4);
-    box-shadow: 5px 5px 10px 0 rgb(134, 4, 4);
+.jefes-wrapper ul li h3.hades{
+    width: 250px;
     background-color: black;
-    border-radius: 10%;
+    color: rgb(192, 0, 0);
+    text-align: center;
+    font-size: 60px;
+    box-shadow: 5px 5px 10px rgb(78, 0, 0);
 }
-.jefes-wrapper li .hades-img{
-    box-shadow: 10px 10px 10px 0 rgb(134, 4, 4);
-    background: black;
-    border-radius: 50%;
-}
-.jefes-wrapper .jefes-div{
-    width: 95%;
-    height: 5px;
+#jefes .jefes-wrapper ul li div.hades #hades-img{
     background-color: black;
-    border-radius: 70%;
+    box-shadow: 10px 10px 10px rgb(192, 0, 0);
+    width: 350px;
+    height: 350px;
 }
 #end .end-wrapper ul img{
     width: 150px;
