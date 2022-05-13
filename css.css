@@ -387,6 +387,7 @@ ul{
     color: white;
     position: relative;
     top:-50px;
+    text-decoration: none;
 }
  #end{
      width: 100%;
@@ -396,9 +397,18 @@ ul{
  }
  .end-wrapper{
      display: flex;
-     justify-content: space-evenly;
+     justify-content: space-between;
      align-items: center;
+ }
+ #end .end-wrapper a.formulario{
+     width: 600px;
+     font-size: 30px;
+     transition: color 1s;
+     border-radius: 20%;
+ }
 
+ #end .end-wrapper a.formulario:hover{
+     color: rgb(190, 0, 0);
  }
 @media (min-width: 400px){
      .arms-info li p{
