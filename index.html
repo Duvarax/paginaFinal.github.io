@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="javascript.js"></script>
         <link type="text/css" rel="stylesheet" href="css.css">
         <script src="https://kit.fontawesome.com/19cf718452.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c78bc3fc-9f08-47ca-81ae-d89055c7ec49/ddq9g3n-7c93f428-03aa-4fff-bf8a-b80a2c5abd53.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M3OGJjM2ZjLTlmMDgtNDdjYS04MWFlLWQ4OTA1NWM3ZWM0OVwvZGRxOWczbi03YzkzZjQyOC0wM2FhLTRmZmYtYmY4YS1iODBhMmM1YWJkNTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KKR9yH4GCrxWJutSNC01GQP2lPsRDQHUUHJL__rnooY">
@@ -89,20 +90,11 @@
                 <div class="armas-wrapper">
                     <h2>ARMAS INFERNALES</h2>
                     <ul class="arms">
-                        <li id="1"><img src="images/Espada.png"></li>
-                        <li id="2"><img src="images/Lanza.png"></li>
-                        <li id="3"><img src="images/Escudo.png"></li>
-                        <li id="4"><img src="images/Arco.png"></li>
-                        <li id="5"><img src="images/Guantes.png"></li>
-                        <li id="6"><img src="images/Metralleta.png"></li>
+                       <img id="slider" name="slider" src="images/Espada.png">
                     </ul>
                     <ul class="arms-control">
-                        <li><a href="#1">1</a></li>
-                        <li><a href="#2" target="">2</a></li>
-                        <li><a href="#3">3</a></li>
-                        <li><a href="#4">4</a></li>
-                        <li><a href="#5">5</a></li>
-                        <li><a href="#6">6</a></li>
+                        <li><i onclick="cambiarAtras()" class="fa-solid fa-circle-left"></i></li>
+                        <li><i onclick="cambiarAdelante()" class="fa-solid fa-circle-right"></i></li>                    
                     </ul>
                     <ul class="arms-info">
                         <li ><p><img src="images/Espada.png">"...Stygius, la espada del inframundo, debe haber sido una de las mejores armas que jamás se haya empuñado"</a></li>
