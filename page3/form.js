@@ -73,7 +73,9 @@ function cambiarAdelante3(){
 setInterval(cambiarAtras3, 5000);
 
 function eliminar(){
-    //Elimino la seccion que quiero
+    var nombre = document.getElementById("nombre");
+    if(nombre.value != ""){
+        //Elimino la seccion que quiero
     var objeto = document.getElementById("form-div");
     objeto.parentNode.removeChild(objeto);
     //Creo un contenedor
@@ -86,4 +88,7 @@ function eliminar(){
     var padre = document.getElementById("padre");
     padre.className = "padre-despues";
     padre.appendChild(nuevo);
+    } else{
+        alert("No");
+    
 }
