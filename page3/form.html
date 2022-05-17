@@ -12,12 +12,12 @@
         <div id="form-div">
             <h1>Formulario</h1>
             <p>Ingrese los datos para enviarle la informacion</p>
-            <form id="formulario" class="form">
+            <form name="formulario" id="formulario" class="form" onsubmit="eliminar()">
                 <ul class="info">
                     <li><label>Nombre:</label>
                         <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre" required></li>
                     <li><label>Correo:</label>
-                        <input type="text" name="correo" id="correo" class="form-control" placeholder="Ingrese su correo" required></li>
+                        <input type="email" name="correo" id="correo" class="form-control" placeholder="Ingrese su correo" required></li>
                     <li><label>Edad:</label>
                         <input type="text" name="edad" id="edad" class="form-control" placeholder="Ingrese su edad" required></li>
                     <li>
@@ -28,10 +28,8 @@
                                 <option value="2">Jugador Experimentado</option>
                             </select>
                         </li>
-                    <li class="check">
-                        <span>Eliga los temas de su interes:</span>
+                        <span>Eliga los temas de su interes (opcional):</span>
                         
-                    </li>
                 </ul>
                 <label id="checkbox-label">
                     <input type="checkbox" id="check-input" class="check-input">Dioses</label> 
@@ -48,7 +46,7 @@
                 <label id="checkbox-label">
                     <input type="checkbox" id="check-input" class="check-input">Items extra</label> 
                 </label>
-                <button onclick="eliminar()" type="submit" id="submit" class="submit-button"> 
+                <button type="submit" id="submit" class="submit-button"> 
                     <a>Enviar</a> </button>
             </form>
         </div>
