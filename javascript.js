@@ -14,11 +14,11 @@ function cambiarAtras(){
     }
     document.getElementById("slider").src = img[i];
 }
-var j = 0;
+
 function cambiarAdelante(){
-    j++
-    if(j == 6){
-        j = 0;
+    i++
+    if(i == 6){
+        i = 0;
     }
-    document.getElementById("slider").src = img[j];
+    document.getElementById("slider").src = img[i];
 }
