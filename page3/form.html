@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="form.js"></script>
+        <script src="https://kit.fontawesome.com/19cf718452.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="form.css">
+    </head>
+    <body id="padre">
+        <div id="form-div">
+            <h1>Formulario</h1>
+            <p>Ingrese los datos para enviarle la informacion</p>
+            <form name="formulario" id="formulario" class="form" onsubmit="eliminar()">
+                <ul class="info">
+                    <li><label>Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre" required></li>
+                    <li><label>Correo:</label>
+                        <input type="email" name="correo" id="correo" class="form-control" placeholder="Ingrese su correo" required></li>
+                    <li><label>Edad:</label>
+                        <input type="text" name="edad" id="edad" class="form-control" placeholder="Ingrese su edad" required></li>
+                    <li>
+                        <label>Que nivel de conocimiento tiene de Hades:</label>
+                            <select name="role" id="lista" class="form-control" required>
+                                <option disable selected value>Jugador Novato</option>
+                                <option value="1">Jugador Intermedio</option>
+                                <option value="2">Jugador Experimentado</option>
+                            </select>
+                        </li>
+                        <span>Eliga los temas de su interes (opcional):</span>
+                        
+                </ul>
+                <label id="checkbox-label">
+                    <input type="checkbox" id="check-input" class="check-input">Dioses</label> 
+                </label>
+                <label id="checkbox-label">
+                    <input type="checkbox" id="check-input" class="check-input">Armas</label> 
+                </label>
+                <label id="checkbox-label">
+                    <input type="checkbox" id="check-input" class="check-input">Personajes Extras</label> 
+                </label>
+                <label id="checkbox-label">
+                    <input type="checkbox" id="check-input" class="check-input">Bendiciones</label> 
+                </label>
+                <label id="checkbox-label">
+                    <input type="checkbox" id="check-input" class="check-input">Items extra</label> 
+                </label>
+                <button type="submit" id="submit" class="submit-button"> 
+                    <a>Enviar</a> </button>
+            </form>
+        </div>
+        <div class="extra" id="extra">
+            <h1>Temas de interes</h1>
+            <ul>
+                <li>
+                   <img id="slider" name="slider" src="img/Cerberus.png">
+                    <p><i onclick="cambiarAtras1()" class="fa-solid fa-circle-arrow-left"></i>Personajes Extra<i onclick="cambiarAdelante1()" class="fa-solid fa-circle-arrow-right"></i></p>
+                </li>
+                <li>
+                   <img id="slider1" name="slider1" src="img/1.png">
+                    <p><i onclick="cambiarAtras2()" class="fa-solid fa-circle-arrow-left"></i>Bendiciones<i onclick="cambiarAdelante2()" class="fa-solid fa-circle-arrow-right"></i></p>
+                </li>
+                <li>
+                    <img id="slider2" name="slider2" src="img/G.png">
+                    <p><i onclick="cambiarAtras3()" class="fa-solid fa-circle-arrow-left"></i>Items<i onclick="cambiarAdelante3()" class="fa-solid fa-circle-arrow-right"></i></p>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
