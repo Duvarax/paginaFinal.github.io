@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1145360/8d2cd2ab1e26be2befd447428be2310fdedd5cfd.jpg);
+    background-color: rgb(225, 255, 225);
     display: flex;
 }
 ul{
@@ -19,7 +19,6 @@ div{
     flex-direction: column;
     width: 50%;
     height: 100vh;
-    background-color: rgb(225, 255, 225);
     opacity: .9;
 }
  #form-div h1{
