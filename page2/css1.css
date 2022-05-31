@@ -1,0 +1,96 @@
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #000000, #391c1b, #66371c, #835f0c, #849000);}
+.contenedor{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "texto texto texto imagen"
+                         "texto texto texto imagen";
+    opacity: .9;
+}
+ul, li{
+    list-style: none;
+}
+.separador{
+    height: 3px;
+    width: 90%;
+    background-color: gray;
+    border-radius: 80%;
+    z-index: 3;
+    position: relative;
+    top:20px;
+    left: 50px;
+}
+.header{
+    background-color: black;
+    grid-area: header;
+    box-shadow: 0px 5px 15px rgb(56, 43, 0);
+}
+.header h1{
+    text-align: center;
+    color: #ffc94b;
+    font-size: 50px;
+    text-shadow: 0px 1px 10px rgba(255, 255, 255, 0.452);
+}
+.texto{
+    background-color: rgb(0, 0, 0);
+    grid-area: texto;
+}
+.texto ul li a{
+    font-size: 30px;
+    color: white;
+    padding: 50px;
+}
+.texto ul ul li p{
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 25px;
+    color: wheat;
+}
+.texto ul ul p img{
+    width: 20px;
+    height: 20px;
+}
+.texto ul li.codice{
+    padding: 50px;
+    display: flex;
+}
+.texto ul li.codice img{
+    object-fit: scale-down;
+}
+.texto ul li.mecanica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen{
+    background-color: rgb(0, 0, 0);
+    grid-area: imagen;
+    width: 30vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header,
+.texto,
+.imagen{
+    border-radius: 5px;
+}
+.imagen img{
+    width: 80%;
+    height: 80%;
+}

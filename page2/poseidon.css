@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-image: linear-gradient(to bottom, #000000, #0b060a, #0f0d14, #0e131c, #081921, #061d25, #032228, #00262b, #002b31, #003038, #00353f, #003a46);
+    background-size: 100% 100%;
+    background-repeat: repeat;
+}
+.div-background{
+    width: 95%;
+    background-color: rgb(0, 36, 53);
+    opacity: 1;
+    margin: 20px auto;
+}
+li, ul{
+    list-style: none;
+}
+#god{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#god a.god-img{
+    width: 700px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    text-shadow: 7px 7px 10px rgb(130, 247, 247);
+}
+#god a.god-img img{
+    width: 100%;
+    height: 100%;
+}
+.icons{
+    margin: 20px;
+}
+.god-deco ul li{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 30px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -70px;
+    left: -85px;
+}
+.god-deco ul li p{
+    font-size: 10px;
+}
+#god ul{
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.separador{
+    height: 3px;
+    width: 100%;
+    background-color: teal;
+    border-radius: 80%;
+    z-index: 3;
+    position: relative;
+    top:20px;
+    color: rgb(0, 36, 53);
+}
+#god ul li{
+    margin-top: 58px;
+}
+#god ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: none;
+    text-shadow: 4px 4px 5px gray;
+    padding: 40px;
+}
+#god ul li ul li p{
+    color: rgb(231, 231, 231);
+    font-size: 30px;
+    text-shadow: 2px 2px 2px gray;
+}
+#god ul li ul li p img{
+    width: 3%;
+}
+.libre{
+    margin-top: 30px;
+}
+.libre li a{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: none;
+    text-shadow: 4px 4px 5px gray;
+    padding: 40px;
+    margin-left: 55px;
+
+}
+.libre ul li{
+    margin-top: 50px;
+    margin-left:75px;
+    margin-right: 40px;
+    padding: 40px;
+}
+.libre ul li p{
+    color: rgb(231, 231, 231);
+    font-size: 30px;
+    text-shadow: 2px 2px 2px gray;
+}
+li.codice{
+    display: flex;
+}
+
+li.codice img{
+    object-fit: scale-down;
+    margin-right: 30px;
+}
